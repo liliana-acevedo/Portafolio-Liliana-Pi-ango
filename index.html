@@ -6,21 +6,25 @@
     <title>Portafolio | Liliana Piñango</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <nav style="margin-bottom: 20px;">
-            <a href="#perfil" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer;">PERFIL</a>
-            <a href="#formacion" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer;">FORMACIÓN</a>
-            <a href="#proyectos" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer;">PROYECTOS</a>
-        </nav>
+    <nav class="navbar-fixed" id="navbar">
+        <div class="brand">LILIANA<span class="dot">.</span></div>
+        <div class="nav-links">
+            <a href="#perfil">PERFIL</a>
+            <a href="#formacion">FORMACIÓN</a>
+            <a href="#proyectos">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
+        </div>
+        <div style="width: 100px; display: none;"></div> 
+    </nav>
 
-        <h1 class="main-title">Portafolio<span class="dot">.</span></h1>
+    <header class="white-banner">
+        <h1 class="main-title">Portafolio<span class="dot-accent">.</span></h1>
         <p class="subtitle">SOLUCIONES TECNOLÓGICAS & GESTIÓN DE PROYECTOS</p>
     </header>
 
@@ -32,170 +36,177 @@
         <div class="profile-info">
             <h2>Liliana Piñango</h2>
             <p class="role">Ingeniería de Sistemas</p>
-            
-            <h3>Sobre mí</h3>
             <p class="bio">
-                Soy una profesional responsable, comprometida y con una sólida disposición al aprendizaje continuo. Cuento con formación en Ingeniería de Sistemas y experiencia en el desarrollo y gestión de soluciones tecnológicas, participando en la creación de sistemas administrativos, plataformas digitales y proyectos orientados a la automatización de procesos. Me destaco por mi capacidad para asumir retos, adaptarme a distintos entornos y mantener un enfoque orientado a la mejora constante, contribuyendo de manera efectiva al desarrollo y éxito de cada proyecto.
+                Soy una profesional responsable, comprometida y con una sólida disposición al aprendizaje continuo. Cuento con formación en Ingeniería de Sistemas y experiencia en el desarrollo y gestión de soluciones tecnológicas, participando en la creación de sistemas administrativos, plataformas digitales y proyectos orientados a la automatización de procesos.
             </p>
         </div>
     </section>
 
-    <section id="formacion" class="resume container" style="margin-bottom: 80px; padding-bottom: 20px;">
+    <section id="formacion" class="resume container">
         <div class="resume-col">
             <h3><i class="fas fa-briefcase"></i> Experiencia</h3>
             <div class="item">
                 <h4>Pasante de Tecnología</h4>
-                <p class="place">Dir. General de Tecnología y Sistematización | Reciente</p>
-                <p>Soporte técnico, redes, telecomunicaciones y desarrollo tecnológico.</p>
+                <p class="place">Dir. General de Tecnología y Sistematización</p>
+                <p>Soporte técnico, redes y desarrollo.</p>
             </div>
             <div class="item">
                 <h4>Project Manager</h4>
-                <p class="place">Proyectos Académicos/Profesionales</p>
-                <p>Liderazgo en proyectos de IA (Horus, Simotemp) y sistemas de gestión.</p>
+                <p class="place">Proyectos Académicos</p>
+                <p>Liderazgo en proyectos de IA (Horus, Simotemp).</p>
             </div>
         </div>
-
         <div class="resume-col">
             <h3><i class="fas fa-graduation-cap"></i> Educación</h3>
             <div class="item">
                 <h4>Ingeniería de Sistemas</h4>
                 <p class="place">UNEFA - Sede Maracay</p>
-                <p style="font-size: 0.8rem; color: #666;">Culminación académica / En espera de defensa</p>
+                <p style="font-size: 0.8rem; color: #666;">Culminación académica</p>
             </div>
             <div class="item">
                 <h4>Cursos Técnicos</h4>
-                <p class="place">Redes de Informática & Desarrollo Web</p>
+                <p class="place">Redes & Desarrollo Web</p>
             </div>
         </div>
-
+        
         <div class="resume-col">
             <h3><i class="fas fa-tools"></i> Herramientas</h3>
             <div class="skills-icons">
                 <i class="fab fa-python" title="Python"></i>
-                <i class="fas fa-database" title="Bases de Datos (SQL)"></i>
+                <i class="fas fa-database" title="SQL"></i>
                 <i class="fab fa-linux" title="Linux"></i>
-                <i class="fas fa-terminal" title="Terminal / Bash"></i>
+                <i class="fas fa-terminal" title="Terminal"></i>
                 <i class="fab fa-git-alt" title="Git"></i>
                 <i class="fas fa-network-wired" title="Redes"></i>
                 <i class="fas fa-code" title="VS Code"></i>
-                <i class="fas fa-pen-nib" title="Adobe Illustrator"></i>
+                <i class="fas fa-pen-nib" title="Illustrator"></i>
             </div>
         </div>
     </section>
 
-    <section id="proyectos" class="section-title-banner" style="margin-top: 50px; padding-top: 20px;">
+    <section id="aportar" class="value-section container">
+        <h2 class="section-heading-center">LO QUE PUEDO <span style="color: var(--accent-color);">APORTAR</span></h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Innovación</h4>
+                <p>Soluciones creativas a problemas complejos.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users-cog"></i>
+                <h4>Liderazgo</h4>
+                <p>Coordinación de equipos y cumplimiento de objetivos.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-rocket"></i>
+                <h4>Optimización</h4>
+                <p>Mejora de procesos y eficiencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section-title-banner">
         <h2>DESARROLLO<br><span class="outline-text">& PROYECTOS</span></h2>
     </section>
 
     <section class="projects-list container">
-        
         <article class="project-card">
             <div class="project-info">
                 <h3>Sistema Administrativo de Inventario</h3>
-                <p class="project-desc">
-                    Diseño, desarrollo y puesta en marcha de un sistema integral para la gestión y control de inventarios. 
-                    Optimización de flujos de entrada y salida de mercancía con reportes precisos.
-                </p>
-                <ul class="tech-stack">
-                    <li>Gestión</li>
-                    <li>Base de Datos</li>
-                    <li>Optimización</li>
-                </ul>
+                <p class="project-desc">Diseño, desarrollo y puesta en marcha de un sistema integral para la gestión y control de inventarios.</p>
+                <ul class="tech-stack"><li>Gestión</li><li>Base de Datos</li><li>Optimización</li></ul>
             </div>
-            <div class="project-img-wrapper">
-                <img src="imagen/Sistema Administrativo de Inventario.png" alt="Inventario">
-            </div>
+            <div class="project-img-wrapper"><img src="imagen/Sistema Administrativo de Inventario.png" alt="Inventario"></div>
         </article>
 
         <article class="project-card reverse">
             <div class="project-info">
                 <h3>Horus IA - Control de Asistencia</h3>
-                <p class="project-desc">
-                    Rol de <strong>Project Manager</strong>. Coordinación del equipo para el desarrollo de un sistema automatizado 
-                    de control de asistencia estudiantil utilizando Inteligencia Artificial.
-                </p>
-                <ul class="tech-stack">
-                    <li>Project Management</li>
-                    <li>IA</li>
-                    <li>Automatización</li>
-                </ul>
+                <p class="project-desc">Rol de <strong>Project Manager</strong>. Sistema automatizado de control de asistencia estudiantil con IA.</p>
+                <ul class="tech-stack"><li>PM</li><li>IA</li><li>Automatización</li></ul>
             </div>
-            <div class="project-img-wrapper">
-                <img src="imagen/HORUS_INTERFAZ_1.jpg" alt="Horus IA">
-            </div>
+            <div class="project-img-wrapper"><img src="imagen/HORUS_INTERFAZ_1.jpg" alt="Horus IA"></div>
         </article>
         
         <article class="project-card">
             <div class="project-info">
                 <h3>SIMOTEMP_AI - Monitoreo Térmico</h3>
-                <p class="project-desc">
-                    Liderazgo en el desarrollo de un sistema inteligente de monitoreo de temperaturas. 
-                    Implementación de técnicas de IA para el análisis predictivo y gestión de datos térmicos.
-                </p>
-                <ul class="tech-stack">
-                    <li>IoT</li>
-                    <li>Análisis de Datos</li>
-                    <li>IA</li>
-                </ul>
+                <p class="project-desc">Sistema inteligente de monitoreo de temperaturas con técnicas de IA.</p>
+                <ul class="tech-stack"><li>IoT</li><li>Data Analysis</li><li>IA</li></ul>
             </div>
-            <div class="project-img-wrapper">
-                <img src="imagen/SIMOTEMP_AI.jpg" alt="Simotemp">
-            </div>
+            <div class="project-img-wrapper"><img src="imagen/SIMOTEMP_AI.jpg" alt="Simotemp"></div>
         </article>
 
         <article class="project-card reverse">
             <div class="project-info">
                 <h3>SERVITEC - Soporte Técnico</h3>
-                <p class="project-desc">
-                    Sistema multiplataforma con panel interactivo, filtros avanzados y carga asíncrona. 
-                    Incluye generación automática de reportes en Excel y módulos diseñados con enfoque en UX/UI.
-                </p>
-                <ul class="tech-stack">
-                    <li>Multiplataforma</li>
-                    <li>UX/UI</li>
-                    <li>Reportes Excel</li>
-                </ul>
+                <p class="project-desc">Sistema multiplataforma con panel interactivo y reportes en Excel.</p>
+                <ul class="tech-stack"><li>Multiplataforma</li><li>UX/UI</li><li>Excel</li></ul>
             </div>
-            <div class="project-img-wrapper">
-                <img src="imagen/SERVITEC.jpg" alt="Servitec">
-            </div>
+            <div class="project-img-wrapper"><img src="imagen/SERVITEC.jpg" alt="Servitec"></div>
         </article>
 
         <article class="project-card">
             <div class="project-info">
                 <h3>Landing Page de "Sip Sistem, C.A"</h3>
-                <p class="project-desc">
-                    Diseño y desarrollo integral del sitio web para la empresa Sip Sistem, C.A. 
-                    Enfoque en una identidad visual moderna, navegación intuitiva y adaptabilidad a dispositivos móviles.
-                </p>
-                <ul class="tech-stack">
-                    <li>Diseño Web</li>
-                    <li>Frontend</li>
-                    <li>Branding</li>
-                </ul>
+                <p class="project-desc">Diseño y desarrollo integral del sitio web con identidad visual moderna.</p>
+                <ul class="tech-stack"><li>Web Design</li><li>Frontend</li><li>Branding</li></ul>
             </div>
-            <div class="project-img-wrapper">
-                <img src="imagen/web de cip.jpg" alt="Cip Fluir">
-            </div>
+            <div class="project-img-wrapper"><img src="imagen/web de cip.jpg" alt="Cip Fluir"></div>
         </article>
-
     </section>
 
-    <section class="social-footer">
+    <section id="contacto" class="social-footer">
         <h2>CONTACTO</h2>
-        <div class="social-links">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lilianapinango61@gmail.com" target="_blank" class="social-btn">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            
-            <a href="https://www.linkedin.com/in/liliana-piñango-b422162b2" target="_blank" class="social-btn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+        <div class="contact-form-container">
+            <form id="contactForm" action="https://formspree.io/f/xldqzvnz" method="POST" class="contact-form">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo" required>
+                </div>
+                <input type="text" name="subject" placeholder="Asunto" required>
+                <textarea name="message" placeholder="Mensaje..." rows="5" required></textarea>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+                <p id="my-form-status" style="display: none; margin-top:10px; text-align:center;"></p>
+            </form>
         </div>
-        <p style="color: #666; margin-top: 20px;">Maracay, Aragua - Venezuela</p>
-        
-        <h1 class="final-thanks">Gracias!</h1>
+        <div class="social-links">
+            <a href="mailto:lilianapinango61@gmail.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/liliana-piñango-b422162b2" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
     </section>
 
+    <footer class="main-footer">
+        <p>&copy; 2024 Liliana Piñango. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/584124822743" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // --- 1. Script para el cambio de color de la barra ---
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // --- 2. Script para el Formulario ---
+        var form = document.getElementById("contactForm");
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          status.style.display = "block"; status.style.color = "#fff"; status.innerHTML = "Enviando...";
+          fetch(event.target.action, { method: form.method, body: data, headers: {'Accept': 'application/json'} })
+          .then(response => { if (response.ok) { status.innerHTML = "¡Enviado!"; form.reset(); } else { status.innerHTML = "Error."; } })
+          .catch(error => { status.innerHTML = "Error de conexión."; });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
 </body>
 </html>
