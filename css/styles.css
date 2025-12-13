@@ -1,4 +1,6 @@
-/* CONFIGURACIÓN BASE */
+/* =========================================
+   CONFIGURACIÓN BASE Y VARIABLES
+   ========================================= */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -20,7 +22,7 @@ body {
     color: var(--text-color);
     font-family: var(--font-main);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita scroll horizontal general */
 }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
@@ -78,7 +80,9 @@ body {
     text-transform: uppercase;
 }
 
-/* 2. ENCABEZADO BLANCO */
+/* =========================================
+   2. ENCABEZADO BLANCO (PORTADA)
+   ========================================= */
 .white-banner {
     background-color: #ffffff;
     color: #000000;
@@ -103,7 +107,9 @@ body {
     color: #555;
 }
 
-/* 3. PERFIL */
+/* =========================================
+   3. PERFIL
+   ========================================= */
 .hero {
     display: flex;
     align-items: center;
@@ -136,7 +142,9 @@ body {
 .profile-info .bio { color: var(--text-muted); max-width: 600px; }
 
 
-/* RESTO DE ESTILOS */
+/* =========================================
+   RESTO DE SECCIONES (Resumen, Habilidades)
+   ========================================= */
 .resume { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 80px; border-top: 1px solid #333; padding-top: 40px;}
 .resume-col h3 { color: var(--accent-color); margin-bottom: 20px; font-size: 1.4rem; }
 
@@ -163,7 +171,7 @@ body {
 .skills-icons i:hover { color: var(--accent-color); transform: translateY(-3px); transition: 0.3s; }
 
 
-/* --- SECCIÓN APORTE --- */
+/* SECCIÓN APORTE */
 .value-section { 
     margin-bottom: 60px; 
     text-align: center; 
@@ -185,7 +193,7 @@ body {
 .value-card h4 { font-size: 1.5rem; color: #fff; margin-bottom: 15px; }
 .value-card p { color: var(--text-muted); }
 
-/* --- TÍTULO PROYECTOS --- */
+/* TÍTULO PROYECTOS */
 .section-title-banner { 
     text-align: center; 
     padding: 30px 0 60px 0; 
@@ -234,7 +242,7 @@ body {
 .project-img-wrapper img { width: 100%; display: block; border-radius: 5px; }
 .project-img-wrapper:hover { transform: scale(1.02); }
 
-/* Footer y Contacto */
+/* FOOTER Y CONTACTO */
 .social-footer { background: #000; padding: 60px 20px; text-align: center; border-top: 2px solid var(--accent-color); }
 .social-footer h2 { font-size: 2.5rem; color: #fff; margin-bottom: 30px; }
 .contact-form-container { max-width: 600px; margin: 0 auto 40px; }
@@ -248,7 +256,7 @@ body {
 .social-btn:hover { background: var(--accent-color); border-color: var(--accent-color); color: #000; }
 .main-footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #666; border-top: 1px solid #222; }
 
-/* Botón flotante de WhatsApp */
+/* BOTÓN FLOTANTE WHATSAPP (Estilo base) */
 .whatsapp-float { 
     position: fixed; 
     bottom: 20px; 
@@ -267,7 +275,7 @@ body {
 }
 
 /* =========================================
-   RESPONSIVE (MÓVIL) - CORRECCIONES AGRESIVAS
+   RESPONSIVE (MÓVIL) - CORRECCIÓN DEFINITIVA
    ========================================= */
 @media (max-width: 768px) {
     /* Ajustes generales de layout */
@@ -285,26 +293,32 @@ body {
     .project-card, .project-card.reverse { flex-direction: column; }
     .contact-form .input-group { flex-direction: column; gap: 0; }
     
-    /* CORRECCIÓN 1: Ajuste del Título "PORTAFOLIO" con !important y VW */
+    /* ----------------------------------------------------
+       CORRECCIÓN 1: TÍTULO "PORTAFOLIO"
+       Usamos 'vw' (viewport width). 12vw significa el 12% 
+       del ancho de la pantalla. Se ajusta automáticamente.
+       ---------------------------------------------------- */
     .white-banner {
         padding: 100px 10px 40px 10px !important; /* Menos espacio a los lados */
     }
     .main-title {
-        /* ESTO ES CLAVE: 11vw significa el 11% del ancho de la pantalla. Se achica automáticamente */
-        font-size: 11vw !important; 
-        line-height: 1.2 !important;
+        font-size: 12vw !important; /* MÁGICO: Se adapta al ancho de la pantalla */
+        line-height: 1.1 !important;
         word-wrap: break-word !important;
     }
     .subtitle {
-        font-size: 0.7rem !important; 
+        font-size: 0.75rem !important; 
     }
 
-    /* CORRECCIÓN 2: Ajuste del botón de WhatsApp con !important */
+    /* ----------------------------------------------------
+       CORRECCIÓN 2: BOTÓN WHATSAPP
+       Forzamos un tamaño más pequeño con !important
+       ---------------------------------------------------- */
     .whatsapp-float {
-        width: 45px !important;       /* Forzamos tamaño pequeño */
+        width: 45px !important;       /* Más pequeño que en PC */
         height: 45px !important;
-        font-size: 22px !important;   /* Icono más pequeño */
-        bottom: 15px !important;      
+        font-size: 24px !important;   /* Icono ajustado */
+        bottom: 15px !important;      /* Márgenes seguros */
         right: 15px !important;       
     }
 }
