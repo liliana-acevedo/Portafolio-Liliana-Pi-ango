@@ -163,9 +163,9 @@ body {
 .skills-icons i:hover { color: var(--accent-color); transform: translateY(-3px); transition: 0.3s; }
 
 
-/* --- SECCIÓN APORTE (Ajustado el margen inferior) --- */
+/* --- SECCIÓN APORTE --- */
 .value-section { 
-    margin-bottom: 60px; /* ANTES ERA 100px - Ahora hay menos espacio con la siguiente sección */
+    margin-bottom: 60px; 
     text-align: center; 
 }
 
@@ -185,18 +185,16 @@ body {
 .value-card h4 { font-size: 1.5rem; color: #fff; margin-bottom: 15px; }
 .value-card p { color: var(--text-muted); }
 
-/* --- TÍTULO PROYECTOS (Ajustado el padding y line-height) --- */
+/* --- TÍTULO PROYECTOS --- */
 .section-title-banner { 
     text-align: center; 
-    padding: 30px 0 60px 0; /* ANTES ERA 60px arriba - Ahora subimos un poco el título */
+    padding: 30px 0 60px 0; 
 }
 
 .section-title-banner h2 { 
     font-size: 3rem; 
     font-weight: 900; 
     color: #fff; 
-    
-    /* ESTO ES LO NUEVO: Junta las líneas del título */
     line-height: 0.9; 
 }
 
@@ -249,10 +247,30 @@ body {
 .social-btn { color: #fff; border: 1px solid #fff; padding: 10px 25px; text-decoration: none; border-radius: 30px; transition: 0.3s; }
 .social-btn:hover { background: var(--accent-color); border-color: var(--accent-color); color: #000; }
 .main-footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #666; border-top: 1px solid #222; }
-.whatsapp-float { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 30px; text-decoration: none; z-index: 100; }
 
-/* Responsive */
+/* Botón flotante de WhatsApp */
+.whatsapp-float { 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 60px; 
+    height: 60px; 
+    background: #25d366; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #fff; 
+    font-size: 30px; 
+    text-decoration: none; 
+    z-index: 100; 
+}
+
+/* =========================================
+   RESPONSIVE (MÓVIL)
+   ========================================= */
 @media (max-width: 768px) {
+    /* Ajustes generales de layout */
     .nav-links { 
         position: static; 
         transform: none; 
@@ -266,4 +284,25 @@ body {
     .hero { flex-direction: column; text-align: center; }
     .project-card, .project-card.reverse { flex-direction: column; }
     .contact-form .input-group { flex-direction: column; gap: 0; }
+    
+    /* CORRECCIÓN 1: Ajuste del Título "PORTAFOLIO" */
+    .white-banner {
+        padding: 100px 20px 40px 20px; /* Reducimos el padding superior para móviles */
+    }
+    .main-title {
+        font-size: 2.2rem; /* Tamaño reducido para que quepa en pantalla vertical */
+        word-break: break-word; /* Evita desbordamiento */
+    }
+    .subtitle {
+        font-size: 0.7rem; /* Subtítulo proporcional */
+    }
+
+    /* CORRECCIÓN 2: Ajuste del botón de WhatsApp */
+    .whatsapp-float {
+        width: 50px;       /* Botón más pequeño */
+        height: 50px;
+        font-size: 24px;   /* Icono más pequeño */
+        bottom: 15px;      /* Más pegado al borde inferior */
+        right: 15px;       /* Más pegado al borde derecho */
+    }
 }
