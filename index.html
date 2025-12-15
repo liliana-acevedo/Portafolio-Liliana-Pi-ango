@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Liliana Piñango</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%22100%22 font-weight=%22900%22 font-family=%22sans-serif%22 fill=%22%23ffffff%22>L</text></svg>">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
             <h2>Liliana Piñango</h2>
             <p class="role">Ingeniería de Sistemas</p>
             <p class="bio">
-            Soy una profesional responsable, comprometida y con una sólida disposición al aprendizaje continuo. Cuento con formación en Ingeniería de Sistemas y experiencia en el desarrollo y gestión de soluciones tecnológicas, participando en la creación de sistemas administrativos, plataformas digitales y proyectos orientados a la automatización de procesos. Me destaco por mi capacidad para asumir retos, adaptarme a distintos entornos y mantener un enfoque orientado a la mejora constante.
+                Soy una profesional responsable, comprometida y con una sólida disposición al aprendizaje continuo. Cuento con formación en Ingeniería de Sistemas y experiencia en el desarrollo y gestión de soluciones tecnológicas, participando en la creación de sistemas administrativos, plataformas digitales y proyectos orientados a la automatización de procesos. Me destaco por mi capacidad para asumir retos, adaptarme a distintos entornos y mantener un enfoque orientado a la mejora constante.
             </p>
         </div>
     </section>
@@ -46,13 +47,13 @@
         <div class="resume-col">
             <h3><i class="fas fa-briefcase"></i> Experiencia</h3>
             <div class="item">
-                <h4>Pasante de Tecnología en la Gobernacion de Aragua</h4>
-                <p class="place">Dir. General de Tecnología y Sistematización de Procesos</p>
+                <h4>Pasante de Tecnología</h4>
+                <p class="place">Gobernación de Aragua | Dir. general de Tecnología y Sistematización de Procesos | Oct 2025 - Ene 2026</p>
                 <p>Soporte técnico, redes y desarrollo.</p>
             </div>
             <div class="item">
                 <h4>Project Manager</h4>
-                <p class="place">Proyectos Académicos</p>
+                <p class="place">Proyectos Académicos | 2023 - 2025</p>
                 <p>Liderazgo en proyectos de IA (Horus, Simotemp).</p>
             </div>
         </div>
@@ -61,25 +62,54 @@
             <div class="item">
                 <h4>Ingeniería de Sistemas</h4>
                 <p class="place">UNEFA - Sede Maracay</p>
-                <p style="font-size: 0.8rem; color: #666;">En espera del Titulo</p>
+                <p style="font-size: 0.8rem; color: #666;"></p>En espera de título</p>
             </div>
             <div class="item">
                 <h4>Cursos Técnicos</h4>
-                <p class="place">Redes & Desarrollo Web</p>
+                <p class="place">Redes & Desarrollo Web | 2024 - 2025</p>
             </div>
         </div>
         
         <div class="resume-col">
             <h3><i class="fas fa-tools"></i> Herramientas</h3>
-            <div class="skills-icons">
-                <i class="fab fa-python" title="Python"></i>
-                <i class="fas fa-database" title="SQL"></i>
-                <i class="fab fa-linux" title="Linux"></i>
-                <i class="fas fa-terminal" title="Terminal"></i>
-                <i class="fab fa-git-alt" title="Git"></i>
-                <i class="fas fa-network-wired" title="Redes"></i>
-                <i class="fas fa-code" title="VS Code"></i>
-                <i class="fas fa-pen-nib" title="Illustrator"></i>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <span class="skill-name">Linux</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i>
+                    <span class="skill-name">Bash</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <span class="skill-name">Redes</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <span class="skill-name">Code</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <span class="skill-name">Diseño</span>
+                </div>
             </div>
         </div>
     </section>
@@ -113,46 +143,128 @@
         <article class="project-card">
             <div class="project-info">
                 <h3>Sistema Administrativo de Inventario</h3>
-                <p class="project-desc">Diseño, desarrollo y puesta en marcha de un sistema integral para la gestión y control de inventarios.</p>
-                <ul class="tech-stack"><li>Gestión</li><li>Base de Datos</li><li>Optimización</li></ul>
-            </div>
-            <div class="project-img-wrapper"><img src="imagen/Sistema Administrativo de Inventario.png" alt="Inventario"></div>
-        </article>
+                
+                <p class="project-desc-extended">
+                    Sistema integral para la gestión y control de inventarios, ventas y productos en <strong>Bolsos L&L</strong>. Incluye autenticación, panel de control estadístico, gestión en tiempo real y gráficas de rendimiento mensual.
+                </p>
 
+                <div class="solutions-container">
+                    <span class="solutions-title">Problemas Solucionados:</span>
+                    <ul class="compact-grid">
+                        <li><i class="fas fa-check"></i> Cero registros manuales</li>
+                        <li><i class="fas fa-check"></i> Conteo sin errores</li>
+                        <li><i class="fas fa-check"></i> Trazabilidad exacta</li>
+                        <li><i class="fas fa-check"></i> Control de ventas</li>
+                        <li><i class="fas fa-check"></i> Data centralizada</li>
+                    </ul>
+                </div>
+
+                <ul class="tech-stack">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Gestión</li>
+                    <li>Optimización</li>
+                </ul>
+            </div>
+
+            <div class="project-img-wrapper">
+                <img src="imagen/Sistema Administrativo de Inventario.png" alt="Sistema Bolsos L&L">
+            </div>
+        </article>
         <article class="project-card reverse">
             <div class="project-info">
                 <h3>Horus IA - Control de Asistencia</h3>
-                <p class="project-desc">Rol de <strong>Project Manager</strong>. Sistema automatizado de control de asistencia estudiantil con IA.</p>
-                <ul class="tech-stack"><li>PM</li><li>IA</li><li>Automatización</li></ul>
+                
+                <p class="project-desc-extended">
+                    Como <strong>Project Manager</strong>, coordiné el desarrollo de <strong>HORUS</strong>, una aplicación móvil con IA para optimizar la asistencia estudiantil. El sistema gestiona listados y genera reportes automáticos, analizando patrones de asistencia para facilitar la toma de decisiones académicas.
+                </p>
+
+                <div class="solutions-container">
+                    <span class="solutions-title">Problemas Solucionados:</span>
+                    <ul class="compact-grid">
+                        <li><i class="fas fa-check"></i> Registro manual</li>
+                        <li><i class="fas fa-check"></i> Rapidez en grupos grandes</li>
+                        <li><i class="fas fa-check"></i> Acceso histórico inmediato</li>
+                        <li><i class="fas fa-check"></i> Falta de orden en las listas</li>
+                        <li><i class="fas fa-check"></i> Digitalización de procesos</li>
+                    </ul>
+                </div>
+
+                <ul class="tech-stack">
+                    <li>Project Manager</li>
+                    <li>Inteligencia Artificial</li>
+                    <li>App Móvil</li>
+                </ul>
             </div>
-            <div class="project-img-wrapper"><img src="imagen/HORUS_INTERFAZ_1.jpg" alt="Horus IA"></div>
+            <div class="project-img-wrapper">
+                <img src="imagen/HORUS_INTERFAZ_1.jpg" alt="Horus IA">
+            </div>
         </article>
-        
+
+
+
         <article class="project-card">
             <div class="project-info">
-                <h3>SIMOTEMP_AI - Monitoreo Térmico</h3>
-                <p class="project-desc">Sistema inteligente de monitoreo de temperaturas con técnicas de IA.</p>
-                <ul class="tech-stack"><li>IoT</li><li>Data Analysis</li><li>IA</li></ul>
+                <h3>SERVITEC - Gestión de Servicios</h3>
+                
+                <p class="project-desc-extended">
+                    Diseño y desarrollo de <strong>SERVITEC</strong>, sistema multiplataforma para la gestión de servicios técnicos con paneles interactivos. Permite registrar solicitudes, asignar técnicos y monitorear estados vía web y móvil, facilitando la administración por departamentos y la trazabilidad de cada atención.
+                </p>
+
+                <div class="solutions-container">
+                    <span class="solutions-title">Problemas Solucionados:</span>
+                    <ul class="compact-grid">
+                        <li><i class="fas fa-check"></i> Cero formularios físicos.</li>
+                        <li><i class="fas fa-check"></i> Asignación técnica directa</li>
+                        <li><i class="fas fa-check"></i> Control por departamentos</li>
+                        <li><i class="fas fa-check"></i> Acceso remoto móvil</li>
+                        <li><i class="fas fa-check"></i> Reportes automáticos</li>
+                    </ul>
+                </div>
+
+                <ul class="tech-stack">
+                    <li>Multiplataforma</li>
+                    <li>Soporte Técnico</li>
+                    <li>Web & Móvil</li>
+                </ul>
             </div>
-            <div class="project-img-wrapper"><img src="imagen/SIMOTEMP_AI.jpg" alt="Simotemp"></div>
+            <div class="project-img-wrapper">
+                <img src="imagen/SERVITEC.jpg" alt="Interfaz Servitec">
+            </div>
         </article>
+
+
+
 
         <article class="project-card reverse">
             <div class="project-info">
-                <h3>SERVITEC - Soporte Técnico</h3>
-                <p class="project-desc">Sistema multiplataforma con panel interactivo y reportes en Excel.</p>
-                <ul class="tech-stack"><li>Multiplataforma</li><li>UX/UI</li><li>Excel</li></ul>
-            </div>
-            <div class="project-img-wrapper"><img src="imagen/SERVITEC.jpg" alt="Servitec"></div>
-        </article>
+                <h3>Landing Page "Sip Sistem, C.A"</h3>
+                
+                <p class="project-desc-extended">
+                    Diseño y desarrollo integral del sitio web corporativo para <strong>Sip Sistem, C.A.</strong>, especializado en soluciones industriales. Incorpora identidad visual moderna, descarga de catálogos digitales y acceso directo a contacto, facilitando la consulta técnica para clientes y aliados.
+                </p>
 
-        <article class="project-card">
-            <div class="project-info">
-                <h3>Landing Page de "Sip Sistem, C.A"</h3>
-                <p class="project-desc">Diseño y desarrollo integral del sitio web con identidad visual moderna.</p>
-                <ul class="tech-stack"><li>Web Design</li><li>Frontend</li><li>Branding</li></ul>
+                <div class="solutions-container">
+                    <span class="solutions-title">Problemas Solucionados:</span>
+                    <ul class="compact-grid">
+                        <li><i class="fas fa-check"></i> Presencia digital</li>
+                        <li><i class="fas fa-check"></i> Catálogo web accesible</li>
+                        <li><i class="fas fa-check"></i> Contacto directo</li>
+                        <li><i class="fas fa-check"></i> Identidad visual moderna</li>
+                        <li><i class="fas fa-check"></i> información centralizada</li>
+                    </ul>
+                </div>
+
+                <ul class="tech-stack">
+                    <li>Web Design</li>
+                    <li>Frontend</li>
+                    <li>Branding</li>
+                    <li>UX/UI</li>
+                </ul>
             </div>
-            <div class="project-img-wrapper"><img src="imagen/web de cip.jpg" alt="Cip Fluir"></div>
+            <div class="project-img-wrapper">
+                <img src="imagen/web de cip.jpg" alt="Web Sip Sistem">
+            </div>
         </article>
     </section>
 
@@ -177,7 +289,7 @@
     </section>
 
     <footer class="main-footer">
-        <p>&copy; 2025 Liliana Piñango. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Liliana Piñango. Todos los derechos reservados.</p>
     </footer>
 
     <a href="https://wa.me/584124822743" class="whatsapp-float" target="_blank">
@@ -208,5 +320,3 @@
         }
         form.addEventListener("submit", handleSubmit);
     </script>
-</body>
-</html>
