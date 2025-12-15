@@ -161,14 +161,70 @@ body {
 .item h4 { color: #fff; margin-bottom: 5px; font-size: 1.1rem; }
 .item .place { color: var(--accent-color); font-size: 0.9rem; margin-bottom: 10px; font-style: italic; }
 
-.skills-icons { 
-    display: flex; 
-    gap: 20px; 
-    font-size: 2.5rem; 
-    color: #888;
-    flex-wrap: wrap; 
+
+
+
+
+
+/* --- NUEVO DISEÑO DE HERRAMIENTAS (GRID) --- */
+.skills-grid {
+    display: grid;
+    /* Esto crea columnas automáticas que se ajustan al espacio */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); 
+    gap: 15px;
+    margin-top: 15px;
 }
-.skills-icons i:hover { color: var(--accent-color); transform: translateY(-3px); transition: 0.3s; }
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+}
+
+/* El icono dentro de la tarjeta */
+.skill-card i {
+    font-size: 1.8rem;
+    color: #a0a0a0;
+    transition: color 0.3s ease;
+}
+
+/* El nombre de la herramienta (texto pequeño abajo) */
+.skill-name {
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1; /* Oculto al principio (opcional, o ponle 1 si quieres verlo siempre) */
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+}
+
+/* --- EFECTO HOVER (AL PASAR EL MOUSE) --- */
+.skill-card:hover {
+    background: rgba(0, 212, 219, 0.1); /* Fondo cyan muy suave */
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 219, 0.15);
+}
+
+.skill-card:hover i {
+    color: var(--accent-color); /* El icono se pone Cyan */
+    transform: scale(1.1);
+}
+
+.skill-card:hover .skill-name {
+    opacity: 1; /* Aparece el nombre */
+    transform: translateY(0);
+}
+
+
 
 
 /* SECCIÓN APORTE */
@@ -241,6 +297,79 @@ body {
 }
 .project-img-wrapper img { width: 100%; display: block; border-radius: 5px; }
 .project-img-wrapper:hover { transform: scale(1.02); }
+
+
+
+
+
+
+
+
+/* --- ESTILO COMPACTO PARA PROYECTOS --- */
+
+/* Descripción del proyecto */
+.project-desc-extended {
+    color: #cccccc;
+    margin-bottom: 15px; /* Menos margen */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Contenedor ligero de soluciones */
+.solutions-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Línea divisoria sutil */
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.solutions-title {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Grid de 2 columnas para ahorrar espacio */
+.compact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 8px 15px; /* Espacio pequeño entre filas y columnas */
+    list-style: none;
+    padding: 0;
+}
+
+.compact-grid li {
+    font-size: 0.85rem; /* Letra un poco más pequeña y elegante */
+    color: #a0a0a0;
+    display: flex;
+    align-items: baseline; /* Alinea el icono con la primera línea de texto */
+    gap: 8px;
+    line-height: 1.3;
+}
+
+.compact-grid li i {
+    color: var(--accent-color);
+    font-size: 0.75rem;
+}
+
+/* En móviles volvemos a 1 columna si el texto es muy largo, o mantenemos grid si cabe */
+@media (max-width: 500px) {
+    .compact-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
 
 /* FOOTER Y CONTACTO */
 .social-footer { background: #000; padding: 60px 20px; text-align: center; border-top: 2px solid var(--accent-color); }
