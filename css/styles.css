@@ -110,27 +110,22 @@ body {
     text-align: left;
 }
 
-/* styles.css */
-.hero-image img {
-    width: 350px;
-    height: 350px;
+.profile-img {
+    width: 100%; 
+    height: 100%; 
     object-fit: cover;
-    border-radius: 15px;
-    border: 4px solid var(--primary-color);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    
-    /* AGREGA ESTA LÍNEA: */
-    /* Esto asegura que el cambio de color sea suave y no un salto brusco */
-    transition: filter 0.4s ease; 
+    border-radius: 50%; 
+    position: relative; 
+    z-index: 2;
+    border: 5px solid var(--bg-color);
+
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+.profile-img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.05); 
 }
 
-/* styles.css */
-/* Nueva regla para cuando el cursor pasa por encima de la imagen */
-.hero-image img:hover {
-    filter: grayscale(100%); /* Convierte la imagen a blanco y negro total */
-    /* Opcional: si quieres que también se agrande un poquito para más efecto */
-    /* transform: scale(1.02); */ 
-}
 .profile-image-container {
     width: 280px;
     height: 280px;
